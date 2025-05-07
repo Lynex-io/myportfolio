@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lynex.pvt</title>
+  <link rel="icon" type="image/png" href="lynex.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      z-index: 1000;
+    }
+
+    .nav-left {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #00b4d8;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #00b4d8;
+      color: #000;
+    }
+
+    header {
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      flex-direction: column;
+      padding-top: 80px;
+    }
+
+    
+    .hero-pic {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center; 
+  border: 3px solid #00b4d8;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 180, 216, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 180, 216, 1);
+}
+
+
+    header h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    main section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #00b4d8;
+    }
+
+    section h3 {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #00b4d8;
+    }
+
+    section p,
+    section li {
+      font-size: 1.1rem;
+      max-width: 800px;
+      color: #ddd;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 5px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      color: #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #222;
+      text-align: left;
+    }
+
+    thead {
+      background-color: #00b4d8;
+      color: #000;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="#">Lynex</a>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="mypic.jpg" alt="My Photo" class="hero-pic" />
+    <h1>Mohanish Sanjay Gajbe</h1>
+    <p>CSE (AIML) Student | Tech Enthusiast</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+
+      <h3>Professional Summary</h3>
+      <p>
+        I’m a Computer Science and Engineering (AIML) student with a strong interest in Artificial Intelligence and Machine Learning, passionate about building impactful tech solutions that solve real-world problems. I enjoy combining creativity with technology to push the boundaries of what’s possible.
+      </p>
+
+      <h3>Education</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Education</th>
+            <th>Institution</th>
+            <th>Passing Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SSC</td>
+            <td>Jawaharlal Darda English Medium School, Yavatmal</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>HSC</td>
+            <td>St. Paul Junior College, Nagpur</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>B.Tech in CSE (AI & ML)</td>
+            <td>P.R. Pote Patil College of Engineering and Management, Amravati</td>
+            <td>Expected 2028</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>C</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h3>Certifications</h3>
+<div class="certifications">
+  <ul>
+    <li>🏅 <a href="certificate.pdf" target="_blank">Full Stack Web Development – Google</a></li>
+    <li>🏅 <a href="certificate1.pdf" target="_blank">AI/ML Virtual Internship – Google</a></li>
+    <li>🏅 <a href="certificate2.pdf" target="_blank">Microsoft Build Internship – Microsoft</a></li>
+  </ul>
+</div>
+
+
+
+      <h3>Extracurricular Interests</h3>
+      <p>
+        Outside of academics, I stay active and inspired through football, swimming, and long drives — especially in cloudy, windy weather. These activities keep me balanced and fuel my creativity.
+      </p>
+
+      <h3>Career Goals</h3>
+      <p>
+        My short-term goal is to become a skilled prompt engineer or developer, working on innovative technologies. In the long run, I aspire to launch my own projects and contribute to meaningful tech-driven ventures.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Description</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Portfolio Website</td>
+            <td>Personal website built with HTML, CSS, and JavaScript.</td>
+            <td><a href="http://127.0.0.1:5500/webpage.html" target="_blank">View Project</a></td>
+          </tr>
+          <tr>
+            <td>Square Calculator</td>
+            <td>A web tool to calculate the square of a number using JavaScript.</td>
+            <td><a href="http://127.0.0.1:5500/SquareCalculator.html" target="_blank">View Project</a></td>
+          </tr>
+          <tr>
+            <td>Password Strength Checker</td>
+            <td>A tool to evaluate the strength of passwords based on length, symbols, and characters.</td>
+            <td><a href="http://127.0.0.1:5500/StrenghthChecker.html" target="_blank">View Project</a></td>
+          </tr>
+          <tr>
+            <td>Even and Odd Number Finder</td>
+            <td>Web tool to determine whether a number is even or odd.</td>
+            <td><a href="http://127.0.0.1:5500/EvenOdd.html" target="_blank">View Project</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to reach out, please fill out the form below:</p>
+    
+      <form action="https://formsubmit.co/mohanishgajbe1404@gmail.com" method="POST" style="width: 100%; max-width: 600px; margin: 20px auto;">
+        
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I will get back to you soon.">
+        <input type="hidden" name="_template" value="table">
+    
+        <input type="text" name="name" placeholder="Your Name" required
+          style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: none; background: #222; color: #fff;">
+    
+        <input type="email" name="email" placeholder="Your Email" required
+          style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: none; background: #222; color: #fff;">
+    
+        <input type="text" name="subject" placeholder="Subject"
+          style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: none; background: #222; color: #fff;">
+    
+        <textarea name="message" rows="5" placeholder="Your Message" required
+          style="width: 100%; padding: 10px; border-radius: 4px; border: none; background: #222; color: #fff;"></textarea>
+    
+        <button type="submit"
+          style="margin-top: 10px; padding: 10px 20px; background: #00b4d8; border: none; color: #000; border-radius: 4px; cursor: pointer; font-weight: bold;">Send
+          Message</button>
+      </form>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mohanish Gajbe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
