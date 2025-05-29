@@ -202,22 +202,62 @@
     margin: 8px 0;
   }
 }
+  
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
 
   </style>
 </head>
 
 <body>
   <nav>
-    <div class="nav-left">
-      <a href="#">Lynex</a>
-    </div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="nav-left">
+    <a href="#">Lynex</a>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    &#9776;
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
   <header>
     <img src="mypic.jpg" alt="My Photo" class="hero-pic" />
@@ -365,5 +405,12 @@
   <footer>
     <p>&copy; 2025 Mohanish Gajbe. All rights reserved.</p>
   </footer>
+  <script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('show');
+  }
+</script>
+
 </body>
 </html>
